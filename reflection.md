@@ -1,29 +1,4 @@
-### **Objective**
-
-To improve the code quality, maintainability, and security of the `inventory_system.py` program by using static analysis tools:
-
--   **Pylint** (code quality and logical issues)
--   **Flake8** (PEP8 style and formatting)
--   **Bandit** (security vulnerabilities)
-
-### **Tools Used & Commands**
-
-"pip install pylint flake8 bandit
-
-python -m pylint inventory_system.py > pylint_report.txt
-
-python -m flake8 inventory_system.py > flake8_report.txt
-
-python -m bandit -r inventory_system.py > bandit_report.txt"
-
-  
-
-  
-
-  
-
-1.  #### **Which issues were the easiest to fix, and which were the hardest? Why?**
-    
+### 1. Which issues were the easiest to fix, and which were the hardest? Why?
 
 The easiest issues to fix were **style-related errors** reported by *Flake8* and *Pylint*, such as missing newlines, unused imports, and incorrect naming (camelCase → snake_case). These fixes were straightforward since they only required formatting adjustments.  
 The hardest issues were **removing the `eval()` function** and **replacing bare `except:` blocks**, as they required understanding how the code executed and ensuring the program’s behavior stayed consistent after making safer replacements.
