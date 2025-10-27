@@ -26,7 +26,7 @@ I would integrate static analysis tools into both **local and CI/CD workflows**:
 
 ### 4. What tangible improvements did you observe in the code quality, readability, or potential robustness after applying the fixes?
 
-After applying the fixes, the code became:
+After applying the fixes, the code became
 
 -   **More readable:** with proper naming conventions, spacing, and docstrings.
     
